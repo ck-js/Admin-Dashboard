@@ -1,0 +1,42 @@
+:root {
+    --darkest-blue: #172554
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html body {
+    background-color: var(--darkest-blue);
+
+}
+
+.main-container {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(4, 1fr  );
+
+
+}
+.nav-container {
+    grid-column: 2 /5;
+    grid-row: 1/3;
+border: 10px solid yellow;
+
+}
+.sidebar-container {
+    grid-column: 1;
+    grid-row: 1 / 11;
+    border: 10px solid yellow;
+}
+.projects-container {
+    grid-column: 2 /5;
+    grid-row: 3/ 11;
+    border: 10px solid yellow;
+}
+.trending-container {
+    grid-row: 7/11;
+    grid-column: 4;
+    background-color: white;
+}
