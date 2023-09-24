@@ -28,6 +28,44 @@ display: grid;
 grid-template-columns: repeat(2, 1fr);
 grid-template-rows: repeat(2, 1fr);
 }
+
+.search-container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+#search-svg {
+    height: 50px;
+    
+}
+#searchbox {
+    height: 40px;
+grid-column: 2/11;
+background-color: rgba(216, 209, 209, 0.7);
+border-radius: 5px;
+}
+.nav-icons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+}
+#notification {
+    height: 50px;
+    grid-column: 2;
+}
+.user-icon {
+    
+    grid-column: 3;
+    background-color: green;
+    padding: 10px;
+    border-radius: 50%;
+
+}
+.username {
+    grid-column: 4;
+}
+
 .nav-greeting {
 
 }
@@ -66,7 +104,5 @@ display: grid;
     grid-template-rows: repeat(5, 1fr);
 }
 
-#search-svg {
-    height: 50px;
-}
+
 
