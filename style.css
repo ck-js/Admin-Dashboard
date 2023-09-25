@@ -55,7 +55,6 @@ border-radius: 5px;
     grid-column: 2;
 }
 .user-icon {
-    
     grid-column: 3;
     background-color: green;
     padding: 10px;
@@ -67,7 +66,27 @@ border-radius: 5px;
 }
 
 .nav-greeting {
+display: grid;
+grid-template-columns: repeat(9,1fr);
+place-items: center;
 
+}
+.nav-greeting .user-icon {
+    
+grid-column: 1;
+}
+.nav-greeting .username {
+grid-column: 2 /9;
+}
+.nav-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5%;
+}
+.nav-buttons button {
+    height: 80%;
+background-color: blue;
+border-radius: 30px;
 }
 
 .sidebar-container {
