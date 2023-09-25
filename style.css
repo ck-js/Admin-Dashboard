@@ -1,6 +1,7 @@
 :root {
     --darkest-blue: #172554;
 --light-font-color: white;
+--small-icon-size: 50px
 }
 * {
     padding: 0;
@@ -97,6 +98,29 @@ display: grid;
 grid-template-rows: repeat(20, 1fr);
 
 }
+.item-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 5%;
+}
+
+img {
+    height: var(--small-icon-size);
+    
+}
+.title {
+    display: grid;
+align-items: center;
+}
+
+#home img {
+    height: var(--small-icon-size);
+}
+
+
+
+
+
 .projects-container {
     grid-column: 2 /4;
     grid-row: 3/ 11;
